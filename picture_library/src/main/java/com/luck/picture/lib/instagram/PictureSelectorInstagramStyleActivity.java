@@ -57,7 +57,7 @@ import com.luck.picture.lib.tools.StringUtils;
 import com.luck.picture.lib.tools.ToastUtils;
 import com.luck.picture.lib.tools.ValueOf;
 import com.luck.picture.lib.widget.FolderPopWindow;
-import com.otaliastudios.transcoder.Transcoder;
+/*import com.otaliastudios.transcoder.Transcoder;
 import com.otaliastudios.transcoder.TranscoderListener;
 import com.otaliastudios.transcoder.TranscoderOptions;
 import com.otaliastudios.transcoder.sink.DataSink;
@@ -66,7 +66,7 @@ import com.otaliastudios.transcoder.strategy.DefaultVideoStrategy;
 import com.otaliastudios.transcoder.strategy.TrackStrategy;
 import com.otaliastudios.transcoder.strategy.size.AspectRatioResizer;
 import com.otaliastudios.transcoder.strategy.size.PassThroughResizer;
-import com.otaliastudios.transcoder.strategy.size.Resizer;
+import com.otaliastudios.transcoder.strategy.size.Resizer;*/
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.callback.BitmapCropCallback;
 import com.yalantis.ucrop.callback.BitmapLoadCallback;
@@ -263,7 +263,7 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
         mList.add(new PageGallery(mInstagramGallery));
         PagePhoto pagePhoto = new PagePhoto(this, config);
         mList.add(pagePhoto);
-        mList.add(new PageVideo(pagePhoto));
+//        mList.add(new PageVideo(pagePhoto));
         mInstagramViewPager = new InstagramViewPager(getContext(), mList, config);
         ((RelativeLayout) container).addView(mInstagramViewPager, params);
 
@@ -292,7 +292,7 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
             }
         });
 
-        mInstagramViewPager.setSkipRange(1);
+//        mInstagramViewPager.setSkipRange(1);
         mInstagramViewPager.setOnPageChangeListener(new OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -988,7 +988,7 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
         }
     }
 
-    private void cropVideo(List<LocalMedia> images) {
+/*    private void cropVideo(List<LocalMedia> images) {
         if (images.isEmpty()) {
             return;
         }
@@ -1059,7 +1059,7 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
         })
                 .setVideoTrackStrategy(videoStrategy)
                 .transcode();
-    }
+    }*/
 
     /**
      * 播放音频
@@ -1631,7 +1631,9 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
             bundle.putFloat(InstagramMediaProcessActivity.EXTRA_ASPECT_RATIO_VALUE, mPreviewContainer.getAspectRadio());
         }
 
-        InstagramMediaProcessActivity.launchActivity(this, config, result, bundle, InstagramMediaProcessActivity.REQUEST_SINGLE_IMAGE_PROCESS);
+//        InstagramMediaProcessActivity.launchActivity(this, config, result, bundle, InstagramMediaProcessActivity.REQUEST_SINGLE_IMAGE_PROCESS);
+        data.putExtras(bundle);
+        singleCropHandleResult(data);
     }
 
     /**

@@ -1,5 +1,5 @@
 package com.luck.picture.lib.instagram.process;
-
+/*
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -40,13 +40,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import jp.co.cyberagent.android.gpuimage.GPUImage;
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageGaussianBlurFilter;
 
-/**
+*//**
  * ================================================
  * Created by JessYan on 2020/6/1 15:27
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
- */
+ *//*
 public class InstagramMediaMultiImageContainer extends FrameLayout implements InstagramFilterAdapter.OnItemClickListener, MediaAdapter.OnItemClickListener, ProcessStateCallBack {
     private final RecyclerView mMediaRecyclerView;
     private final RecyclerView mFilterRecyclerView;
@@ -401,4 +401,4 @@ public class InstagramMediaMultiImageContainer extends FrameLayout implements In
             ToastUtils.s(mContext, bitmapWorkerException.getMessage());
         }
     }
-}
+}*/

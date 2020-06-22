@@ -62,8 +62,8 @@ public class InstagramPreviewContainer extends FrameLayout {
     private ImageView mThumbView;
     private GestureCropImageView mGestureCropImageView;
     private OverlayView mOverlayView;
-    private ImageView mRatioView;
-    private ImageView mMultiView;
+//    private ImageView mRatioView;
+//    private ImageView mMultiView;
     private boolean mCropGridShowing;
     private Handler mHandler;
     private boolean isAspectRatio;
@@ -193,7 +193,7 @@ public class InstagramPreviewContainer extends FrameLayout {
         addView(mUCropView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
 
-        mRatioView = new ImageView(context);
+        /*mRatioView = new ImageView(context);
 
         CombinedDrawable ratiodDrawable = new CombinedDrawable(InstagramUtils.createSimpleSelectorCircleDrawable(ScreenUtils.dip2px(context, 30), 0x88000000, Color.BLACK),
                 context.getResources().getDrawable(R.drawable.discover_telescopic).mutate());
@@ -214,9 +214,9 @@ public class InstagramPreviewContainer extends FrameLayout {
             if (mListener != null) {
                 mListener.onRatioChange(isAspectRatio);
             }
-        });
+        });*/
 
-        mMultiView = new ImageView(context);
+        /*mMultiView = new ImageView(context);
 
         CombinedDrawable multiDrawable = new CombinedDrawable(InstagramUtils.createSimpleSelectorCircleDrawable(ScreenUtils.dip2px(context, 30), 0x88000000, Color.BLACK),
                 context.getResources().getDrawable(R.drawable.discover_many).mutate());
@@ -227,7 +227,7 @@ public class InstagramPreviewContainer extends FrameLayout {
         multiLayoutParams.rightMargin = ScreenUtils.dip2px(context, 15);
         multiLayoutParams.bottomMargin = ScreenUtils.dip2px(context, 12);
         addView(mMultiView, multiLayoutParams);
-        mMultiView.setOnClickListener(v -> setMultiMode(!isMulti));
+        mMultiView.setOnClickListener(v -> setMultiMode(!isMulti));*/
 
         View divider = new View(getContext());
         if (config.instagramSelectionConfig.getCurrentTheme() == InsGallery.THEME_STYLE_DARK) {
@@ -243,11 +243,11 @@ public class InstagramPreviewContainer extends FrameLayout {
 
     public void setMultiMode(boolean multi) {
         isMulti = multi;
-        if (multi) {
+        /*if (multi) {
             mRatioView.setVisibility(View.GONE);
         } else {
             mRatioView.setVisibility(View.VISIBLE);
-        }
+        }*/
         if (mListener != null) {
             mListener.onSelectionModeChange(multi);
         }

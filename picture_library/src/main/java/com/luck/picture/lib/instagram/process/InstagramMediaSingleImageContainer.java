@@ -1,5 +1,6 @@
 package com.luck.picture.lib.instagram.process;
 
+/*
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -39,13 +40,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import jp.co.cyberagent.android.gpuimage.GPUImage;
 import jp.co.cyberagent.android.gpuimage.GPUImageView;
 
+*/
 /**
  * ================================================
  * Created by JessYan on 2020/6/1 15:27
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
- */
+ *//*
+
 public class InstagramMediaSingleImageContainer extends FrameLayout implements InstagramFilterAdapter.OnItemClickListener, ProcessStateCallBack {
     private final GPUImageView mImageView;
     private final RecyclerView mRecyclerView;
@@ -310,3 +313,4 @@ public class InstagramMediaSingleImageContainer extends FrameLayout implements I
         }
     }
 }
+*/

@@ -1,4 +1,5 @@
 package com.luck.picture.lib.instagram.adapter;
+/*
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
@@ -18,13 +19,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import jp.co.cyberagent.android.gpuimage.GPUImage;
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
 
+*/
 /**
  * ================================================
  * Created by JessYan on 2020/6/2 16:09
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
- */
+ *//*
+
 public class InstagramFilterAdapter extends RecyclerView.Adapter<InstagramFilterAdapter.Holder> {
     private Context mContext;
     private PictureSelectionConfig mConfig;
@@ -96,3 +99,4 @@ public class InstagramFilterAdapter extends RecyclerView.Adapter<InstagramFilter
         }
     }
 }
+*/

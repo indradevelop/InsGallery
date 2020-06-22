@@ -177,8 +177,8 @@ public class InstagramMediaProcessActivity extends PictureBaseActivity {
             isAspectRatio = getIntent().getBooleanExtra(EXTRA_ASPECT_RATIO, false);
             mAspectRatio = getIntent().getFloatExtra(EXTRA_ASPECT_RATIO_VALUE, 0);
         }
-        InstagramMediaMultiImageContainer multiImageContainer = new InstagramMediaMultiImageContainer(this, config, selectMedia, isAspectRatio, mAspectRatio);
-        contentView.addView(multiImageContainer, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+        /*InstagramMediaMultiImageContainer multiImageContainer = new InstagramMediaMultiImageContainer(this, config, selectMedia, isAspectRatio, mAspectRatio);
+        contentView.addView(multiImageContainer, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);*/
     }
 
     private void createSingleVideoContainer(FrameLayout contentView, List<LocalMedia> selectMedia) {
@@ -208,8 +208,8 @@ public class InstagramMediaProcessActivity extends PictureBaseActivity {
             }
 
             Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), uri);
-            InstagramMediaSingleImageContainer singleImageContainer = new InstagramMediaSingleImageContainer(this, config, bitmap, isAspectRatio, mAspectRatio, selectionFilter);
-            contentView.addView(singleImageContainer, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+/*            InstagramMediaSingleImageContainer singleImageContainer = new InstagramMediaSingleImageContainer(this, config, bitmap, isAspectRatio, mAspectRatio, selectionFilter);
+            contentView.addView(singleImageContainer, FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);*/
         } catch (IOException e) {
             e.printStackTrace();
         }

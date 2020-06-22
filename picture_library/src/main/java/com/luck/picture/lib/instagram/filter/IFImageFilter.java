@@ -1,5 +1,20 @@
 package com.luck.picture.lib.instagram.filter;
 
+
+import android.content.Context;
+
+public class IFImageFilter {
+
+    public IFImageFilter(Context context, String fragmentShaderString) {
+    }
+
+
+    public void addInputTexture(int resId) {
+
+    }
+}
+/*
+
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -12,9 +27,11 @@ import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
 import jp.co.cyberagent.android.gpuimage.util.OpenGlUtils;
 
 
+*/
 /**
  * Created by sam on 14-8-9.
- */
+ *//*
+
 public class IFImageFilter extends GPUImageFilter {
     private int filterInputTextureUniform2;
     private int filterInputTextureUniform3;
@@ -186,3 +203,4 @@ public class IFImageFilter extends GPUImageFilter {
         }
     }
 }
+*/

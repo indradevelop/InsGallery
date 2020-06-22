@@ -1,4 +1,5 @@
 package com.luck.picture.lib.instagram.adapter;
+/*
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -16,13 +17,15 @@ import com.luck.picture.lib.tools.ScreenUtils;
 
 import androidx.annotation.NonNull;
 
+*/
 /**
  * ================================================
  * Created by JessYan on 2020/6/2 15:35
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
- */
+ *//*
+
 public class FilterItemView extends FrameLayout {
     private TextView mTitleView;
     private PictureSelectionConfig mConfig;
@@ -88,3 +91,4 @@ public class FilterItemView extends FrameLayout {
         mImageView.setImageBitmap(bitmap);
     }
 }
+*/

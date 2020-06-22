@@ -1,4 +1,5 @@
 package com.luck.picture.lib.instagram.filter;
+/*
 
 import android.content.Context;
 
@@ -8,13 +9,15 @@ import java.util.List;
 
 import jp.co.cyberagent.android.gpuimage.filter.GPUImageFilter;
 
+*/
 /**
  * ================================================
  * Created by JessYan on 2020/6/2 16:17
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
- */
+ *//*
+
 public enum FilterType {
     I_NORMAL("Normal"),
     I_1977("1977"),
@@ -100,3 +103,4 @@ public enum FilterType {
         }
     }
 }
+*/
