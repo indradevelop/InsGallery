@@ -192,6 +192,10 @@ public class InstagramPreviewContainer extends FrameLayout {
 
         addView(mUCropView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
+        //addedd by indra
+        ImageView bgImage = new ImageView(context);
+        bgImage.setBackgroundResource(R.drawable.bg_circle_exclude);
+        addView(bgImage, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
         /*mRatioView = new ImageView(context);
 
