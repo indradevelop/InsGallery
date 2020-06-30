@@ -10,6 +10,7 @@ import com.luck.picture.lib.engine.CacheResourcesEngine;
 import com.luck.picture.lib.engine.ImageEngine;
 import com.luck.picture.lib.entity.LocalMedia;
 import com.luck.picture.lib.instagram.InstagramSelectionConfig;
+import com.luck.picture.lib.language.LanguageConfig;
 import com.luck.picture.lib.listener.OnCustomCameraInterfaceListener;
 import com.luck.picture.lib.listener.OnResultCallbackListener;
 import com.luck.picture.lib.listener.OnVideoSelectedPlayCallback;
@@ -169,7 +170,7 @@ public final class PictureSelectionConfig implements Parcelable {
         maxVideoSelectNum = 0;
         minVideoSelectNum = 0;
         videoQuality = 1;
-        language = -1;
+        language = LanguageConfig.ENGLISH;
         cropCompressQuality = 90;
         videoMaxSecond = 0;
         videoMinSecond = 0;
