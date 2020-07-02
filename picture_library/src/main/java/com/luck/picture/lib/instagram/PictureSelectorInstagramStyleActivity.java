@@ -530,12 +530,17 @@ public class PictureSelectorInstagramStyleActivity extends PictureBaseActivity i
             if (config.style.pictureLeftBackIcon != 0) {
                 mIvPictureLeftBack.setImageResource(config.style.pictureLeftBackIcon);
             }
+
             if (config.style.pictureContainerBackgroundColor != 0) {
                 container.setBackgroundColor(config.style.pictureContainerBackgroundColor);
             }
-            if (!TextUtils.isEmpty(config.style.pictureRightDefaultText)) {
+
+            /*if (!TextUtils.isEmpty(config.style.pictureRightDefaultText)) {
                 mTvPictureRight.setText(config.style.pictureRightDefaultText);
-            }
+            }*/
+
+            mTvPictureRight.setText(getString(R.string.next));
+
         } else {
             if (config.downResId != 0) {
                 Drawable drawable = ContextCompat.getDrawable(this, config.downResId);
